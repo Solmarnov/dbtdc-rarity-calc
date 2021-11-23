@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Search from './pages/Search'
 import './App.css' // Consider deleting
 
@@ -7,11 +7,10 @@ function App() {
   return (
     <Router>
       <div>
-        <Switch>
-          <Route exact path='/'>
-            <Search />
+        <Routes>
+          <Route exact path='/' element={<Search/>}>
           </Route>
-        </Switch>
+        </Routes>
       </div>
     </Router>
   )

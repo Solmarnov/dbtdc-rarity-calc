@@ -1,0 +1,24 @@
+/* primary header */
+.logo {
+  margin: 2rem;
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a > span [aria-hidden="true"] {
+  font-weight: 700;
+  margin-inline-end: 0.75em;
+}

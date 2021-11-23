@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import API from '../../utils/AtomicHubAPI'
+// import API from '../../utils/AtomicHubAPI'
+import Header from '../../components/Header'
 
 
 
@@ -7,9 +8,7 @@ import API from '../../utils/AtomicHubAPI'
 const Search = () => {
 
   return (
-    <div>
-      
-    </div>
+    <Header />
   )
 
 }

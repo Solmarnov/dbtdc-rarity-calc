@@ -28,35 +28,6 @@ const Header = () => {
           </div>
         </nav>
       </div>
-
-      {/* <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-        <span class="sr-only">Menu</span>
-      </button>
-
-      <nav>
-        <ul id="primary-navigation" class="primary-navigation">
-          <li class="active">
-            <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="https://sites.google.com/dayum.com.au/dropbears/home">
-              Home
-            </a>
-          </li>
-          <li>
-            <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="#">
-              Rarity
-            </a>
-          </li>
-          <li>
-            <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="https://sites.google.com/dayum.com.au/dropbears/events">
-              Events
-            </a>
-          </li>
-          <li>
-            <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="https://sites.google.com/dayum.com.au/dropbears/whats-a-dropbear">
-              What's a Dropbear?
-            </a>
-          </li>
-        </ul>
-      </nav> */}
     </header>
   )
 }

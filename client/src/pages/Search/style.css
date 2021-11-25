@@ -1,0 +1,35 @@
+#dropbear-search-container {
+  margin-top: 56px;
+}
+
+#dropbear-search-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+#dropbear-search-form {
+  display: flex;
+  justify-content: center;
+}
+
+#dropbear-search-input {
+  width: 200px;
+  margin: 0 2.5px;
+  padding: 6px;
+  text-align: center;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+#dropbear-search-button {
+  margin: 0 2.5px;
+  padding: 4px 16px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+

@@ -1,3 +1,5 @@
+import React from 'react';
+
 const FormGroup = ({ children }) => {
   return (
     <div className="form-group">

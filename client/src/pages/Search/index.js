@@ -7,6 +7,7 @@ import PageWrapper from '../../components/PageWrapper'
 import Form from '../../components/Form'
 import { FormGroup, FormBtn } from '../../components/FormGroup'
 import { Input } from '../../components/FormGroupChildren'
+import Card from '../../components/Card'
 
 const Search = () => {
   const ipfsBaseUrl = 'https://ipfs.atomichub.io/ipfs/'
@@ -60,7 +61,8 @@ const Search = () => {
         </Form>
       </Container>
       <Container id="dropbear-result-container">
-        {/* {console.log(`img = ${JSON.stringify(dropbear.length)}`)} */}
+        <Card />
+        {/* {console.log(`img = ${JSON.stringify(dropbear.length)}`)}
         {!dropbear.length ? (
           <h3>Syncunce error. Get your shit together.</h3>
         ) : (
@@ -70,7 +72,7 @@ const Search = () => {
             </div>
           </div>
         )
-        }
+        } */}
       </Container>
     </PageWrapper>
   )

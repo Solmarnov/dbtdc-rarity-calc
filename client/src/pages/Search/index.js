@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './style.css'
 import AtomicHubAPI from '../../utils/AtomicHubAPI'
 import Header from '../../components/Header'
@@ -11,8 +11,19 @@ import Card from '../../components/Card'
 
 const Search = () => {
   const ipfsBaseUrl = 'https://ipfs.atomichub.io/ipfs/'
-  const [dropbear, setDropbear] = useState([])
   const [formObject, setFormObject] = useState ({})
+  const [searchResult, setSearchResult] = useState({})
+
+
+  // Delete useEffect after debugging
+  useEffect(() => {
+    console.log(`
+    searchValue:\n${JSON.stringify(formObject, null, 4)}
+    `)
+    console.log(`
+    searchResult:\n${JSON.stringify(searchResult, null, 4)}
+    `)
+  })
 
   const handleInputChange = ({ target }) => {
     const { name, value } = target
@@ -26,13 +37,15 @@ const Search = () => {
     if (formObject.searchQuery) {
       AtomicHubAPI.getAtomicAssets(searchQuery)
       .then(({ data }) => {
-        console.log(data.data[0])
-        setDropbear(data)
+        const { data: searchResultsArray } = data
+        const dropbearName = `Dropbear #${formObject.searchQuery}`
+        // Find and store matching Dropbear object
+        const result = searchResultsArray.find(object => object.data.name === dropbearName)
+        setSearchResult(result)
         setFormObject({})
       })
       .catch(err => console.log(`Error occurred getting Atomic Assets.\n${err}`))
     }
-
   }
 
   return (
@@ -61,6 +74,12 @@ const Search = () => {
         </Form>
       </Container>
       <Container id="dropbear-result-container">
+        {searchResult ? (
+          <h2>Search Dropbear</h2>
+        ) : (
+          <Card>
+          </Card>
+        )}
         <Card />
         {/* {console.log(`img = ${JSON.stringify(dropbear.length)}`)}
         {!dropbear.length ? (

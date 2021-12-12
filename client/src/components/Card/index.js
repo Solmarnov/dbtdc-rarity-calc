@@ -9,15 +9,17 @@ const Card = props => {
     searchResult: { owner },
     searchResult: { data: 
       {
-        Background = defaultValue,
-        Fur = defaultValue,
-        Hat = defaultValue,
-        Eyes = defaultValue,
-        Eyewear = defaultValue,
-        Mouth = defaultValue,
-        Attire = defaultValue,
-        ['Left Hand Object']: LeftHandObject = defaultValue,
-        Watches = defaultValue,
+        Background: background = defaultValue,
+        Fur: fur = defaultValue,
+        Eyes: eyes = defaultValue,
+        Eyewear: eyewear = defaultValue,
+        Mouth: mouth = defaultValue,
+        ['Mouth Object']: mouthObject = defaultValue,
+        Hat: hat = defaultValue,
+        Piercings: piercings = defaultValue,
+        Attire: attire = defaultValue,
+        ['Left Hand Object']: leftHandObject = defaultValue,
+        Watches: watches = defaultValue,
         img
       },
       name
@@ -47,7 +49,7 @@ ${JSON.stringify(props, null, 4)}
                 Background
               </div>
               <div className="card-attribute-value">
-                {Background}
+                {background}
               </div>
             </div>
             <div className="card-attribute">
@@ -55,15 +57,7 @@ ${JSON.stringify(props, null, 4)}
                 Fur
               </div>
               <div className="card-attribute-value">
-                {Fur}
-              </div>
-            </div>
-            <div className="card-attribute">
-              <div className="card-attribute-name">
-                Hat
-              </div>
-              <div className="card-attribute-value">
-                {Hat}
+                {fur}
               </div>
             </div>
             <div className="card-attribute">
@@ -71,7 +65,7 @@ ${JSON.stringify(props, null, 4)}
                 Eyes
               </div>
               <div className="card-attribute-value">
-                {Eyes}
+                {eyes}
               </div>
             </div>
             <div className="card-attribute">
@@ -79,7 +73,7 @@ ${JSON.stringify(props, null, 4)}
                 Eyewear
               </div>
               <div className="card-attribute-value">
-                {Eyewear}
+                {eyewear}
               </div>
             </div>
             <div className="card-attribute">
@@ -87,15 +81,39 @@ ${JSON.stringify(props, null, 4)}
                 Mouth
               </div>
               <div className="card-attribute-value">
-                {Mouth}
+                {mouth}
               </div>
             </div>
+            <div className="card-attribute">
+              <div className="card-attribute-name">
+                Mouth Object
+              </div>
+              <div className="card-attribute-value">
+                {mouthObject}
+              </div>
+            </div>
+            <div className="card-attribute">
+              <div className="card-attribute-name">
+                Hat
+              </div>
+              <div className="card-attribute-value">
+                {hat}
+              </div>
+            </div>        
+            <div className="card-attribute">
+              <div className="card-attribute-name">
+                Piercings
+              </div>
+              <div className="card-attribute-value">
+                {piercings}
+              </div>
+            </div>            
             <div className="card-attribute">
               <div className="card-attribute-name">
                 Attire
               </div>
               <div className="card-attribute-value">
-                {Attire}
+                {attire}
               </div>
             </div>
             <div className="card-attribute">
@@ -103,7 +121,7 @@ ${JSON.stringify(props, null, 4)}
                 Left Hand Object
               </div>
               <div className="card-attribute-value">
-                {LeftHandObject}
+                {leftHandObject}
               </div>
             </div>
             <div className="card-attribute">
@@ -111,7 +129,7 @@ ${JSON.stringify(props, null, 4)}
                 Watches
               </div>
               <div className="card-attribute-value">
-                {Watches}
+                {watches}
               </div>
             </div>
           </div>

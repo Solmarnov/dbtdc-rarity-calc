@@ -85,9 +85,3 @@ const Search = () => {
 }
 
 export default Search
-
-
-
-// Render Dropbear image
-// https://ipfs.atomichub.io/ipfs/QmcQL6BSuEnmMnz2HZtcku7Az7a6vk9L1HdnFyUNUQskpi
-// https://ipfs.atomichub.io/ipfs/${img}

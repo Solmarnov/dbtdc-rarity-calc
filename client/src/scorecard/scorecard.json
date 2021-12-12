@@ -1,0 +1,685 @@
+[
+  {
+    "name": "Dropbear Tree Diving Club Rarity Scorecard",
+    "version": 1.0,
+    "minScore": 10,
+    "maxScore": 110,
+    "attributes": [
+      {
+        "attribute": "fur",
+        "options": [
+          {
+            "name": "Brown",
+            "score": 1,
+            "rarity": 0.2231
+          },
+          {
+            "name": "Pink",
+            "score": 2,
+            "rarity": 0.2187
+          },
+          {
+            "name": "Grey",
+            "score": 3,
+            "rarity": 0.213
+          },
+          {
+            "name": "Zombie",
+            "score": 4,
+            "rarity": 0.1047
+          },
+          {
+            "name": "Robot",
+            "score": 5,
+            "rarity": 0.09
+          },
+          {
+            "name": "Gold",
+            "score": 6,
+            "rarity": 0.0605
+          },
+          {
+            "name": "Rainbow",
+            "score": 7,
+            "rarity": 0.0447
+          },
+          {
+            "name": "Black",
+            "score": 8,
+            "rarity": 0.0302
+          },
+          {
+            "name": "White",
+            "score": 9,
+            "rarity": 0.0152
+          }
+        ]
+      },
+      {
+        "attribute": "eyes",
+        "options": [
+          {
+            "name": "Blue",
+            "score": 1,
+            "rarity": 0.224
+          },
+          {
+            "name": "Black",
+            "score": 2,
+            "rarity": 0.2166
+          },
+          {
+            "name": "Brown",
+            "score": 3,
+            "rarity": 0.2148
+          },
+          {
+            "name": "Brown and Blue",
+            "score": 4,
+            "rarity": 0.1046
+          },
+          {
+            "name": "Red",
+            "score": 5,
+            "rarity": 0.0902
+          },
+          {
+            "name": "Closed",
+            "score": 6,
+            "rarity": 0.0599
+          },
+          {
+            "name": "Laser",
+            "score": 7,
+            "rarity": 0.0449
+          },
+          {
+            "name": "Zombie",
+            "score": 8,
+            "rarity": 0.03
+          },
+          {
+            "name": "Robot",
+            "score": 9,
+            "rarity": 0.0152
+          }
+        ]
+      },
+      {
+        "attribute": "eyewear",
+        "options": [
+          {
+            "name": "",
+            "score": 1,
+            "rarity": 0.086
+          },
+          {
+            "name": "Swimming goggles",
+            "score": 2,
+            "rarity": 0.0831
+          },
+          {
+            "name": "CW Sunnies",
+            "score": 3,
+            "rarity": 0.0827
+          },
+          {
+            "name": "Aussie Flag Glasses",
+            "score": 4,
+            "rarity": 0.0825
+          },
+          {
+            "name": "Hendo Glasses",
+            "score": 5,
+            "rarity": 0.0822
+          },
+          {
+            "name": "Wrap Arounds",
+            "score": 6,
+            "rarity": 0.0809
+          },
+          {
+            "name": "Dr Carl Glasses",
+            "score": 7,
+            "rarity": 0.0807
+          },
+          {
+            "name": "Aviators",
+            "score": 8,
+            "rarity": 0.0788
+          },
+          {
+            "name": "Eye Mask",
+            "score": 9,
+            "rarity": 0.0747
+          },
+          {
+            "name": "Dame Edna glasses",
+            "score": 10,
+            "rarity": 0.0741
+          },
+          {
+            "name": "Diving Mask",
+            "score": 11,
+            "rarity": 0.0599
+          },
+          {
+            "name": "Snow Goggles",
+            "score": 12,
+            "rarity": 0.0447
+          },
+          {
+            "name": "Monocle",
+            "score": 13,
+            "rarity": 0.03
+          },
+          {
+            "name": "3D Glasses",
+            "score": 14,
+            "rarity": 0.0299
+          },
+          {
+            "name": "Ned Kelly Helmet",
+            "score": 15,
+            "rarity": 0.015
+          },
+          {
+            "name": "Mr Squiggle Glasses",
+            "score": 15,
+            "rarity": 0.015
+          }
+        ]
+      },
+      {
+        "attribute": "mouth",
+        "options": [
+          {
+            "name": "Closed",
+            "score": 1,
+            "rarity": 0.4007
+          },
+          {
+            "name": "Teeth",
+            "score": 2,
+            "rarity": 0.3741
+          },
+          {
+            "name": "Mo",
+            "score": 3,
+            "rarity": 0.1499
+          },
+          {
+            "name": "Open",
+            "score": 4,
+            "rarity": 0.0753
+          }
+        ]
+      },
+      {
+        "attribute": "mouthObject",
+        "options": [
+          {
+            "name": "",
+            "score": 1,
+            "rarity": 0.4557
+          },
+          {
+            "name": "Tooth Pick",
+            "score": 2,
+            "rarity": 0.3567
+          },
+          {
+            "name": "Pipe",
+            "score": 3,
+            "rarity": 0.1307
+          },
+          {
+            "name": "Joint",
+            "score": 4,
+            "rarity": 0.0569
+          }
+        ]
+      },
+      {
+        "attribute": "hat",
+        "options": [
+          {
+            "name": "",
+            "score": 1,
+            "rarity": 0.0746
+          },
+          {
+            "name": "Red Beanie",
+            "score": 2,
+            "rarity": 0.0602
+          },
+          {
+            "name": "Red Golf Hat",
+            "score": 3,
+            "rarity": 0.0585
+          },
+          {
+            "name": "Brown Golf Hat",
+            "score": 4,
+            "rarity": 0.0576
+          },
+          {
+            "name": "Green and Gold Beanie",
+            "score": 5,
+            "rarity": 0.0561
+          },
+          {
+            "name": "Propeller Hat",
+            "score": 6,
+            "rarity": 0.0557
+          },
+          {
+            "name": "Black Beanie",
+            "score": 7,
+            "rarity": 0.0552
+          },
+          {
+            "name": "Akubra",
+            "score": 8,
+            "rarity": 0.0548
+          },
+          {
+            "name": "DTDC Cap",
+            "score": 9,
+            "rarity": 0.0527
+          },
+          {
+            "name": "Bowler Hat",
+            "score": 10,
+            "rarity": 0.0522
+          },
+          {
+            "name": "White Golf Hat",
+            "score": 11,
+            "rarity": 0.0512
+          },
+          {
+            "name": "Baggy Green",
+            "score": 12,
+            "rarity": 0.0506
+          },
+          {
+            "name": "Surf Rescue Hat",
+            "score": 13,
+            "rarity": 0.0443
+          },
+          {
+            "name": "Plucka Cap",
+            "score": 14,
+            "rarity": 0.0443
+          },
+          {
+            "name": "Fire Brigade Hat",
+            "score": 14,
+            "rarity": 0.0438
+          },
+          {
+            "name": "Cash Bandana",
+            "score": 15,
+            "rarity": 0.0296
+          },
+          {
+            "name": "Dundee Hat",
+            "score": 16,
+            "rarity": 0.0294
+          },
+          {
+            "name": "Angus Hat",
+            "score": 16,
+            "rarity": 0.0294
+          },
+          {
+            "name": "Horns",
+            "score": 17,
+            "rarity": 0.0287
+          },
+          {
+            "name": "Top Hat",
+            "score": 18,
+            "rarity": 0.0149
+          },
+          {
+            "name": "Humphrey Hat",
+            "score": 18,
+            "rarity": 0.0149
+          },
+          {
+            "name": "Dame Edna Wig",
+            "score": 19,
+            "rarity": 0.0144
+          },
+          {
+            "name": "Mr Squiggle Hat",
+            "score": 20,
+            "rarity": 0.0143
+          },
+          {
+            "name": "Facsinator",
+            "score": 21,
+            "rarity": 0.0137
+          }
+        ]
+      },
+      {
+        "attribute": "piercings",
+        "options": [
+          {
+            "name": "1 Piercing",
+            "score": 1,
+            "rarity": 0.2138
+          },
+          {
+            "name": "2 Piercings",
+            "score": 2,
+            "rarity": 0.2067
+          },
+          {
+            "name": "",
+            "score": 3,
+            "rarity": 0.2057
+          },
+          {
+            "name": "3 Piercings",
+            "score": 4,
+            "rarity": 0.1496
+          },
+          {
+            "name": "4 Piercings",
+            "score": 5,
+            "rarity": 0.0747
+          },
+          {
+            "name": "5 Piercings",
+            "score": 6,
+            "rarity": 0.06
+          },
+          {
+            "name": "6 Piercings",
+            "score": 7,
+            "rarity": 0.0447
+          },
+          {
+            "name": "7 Piercings",
+            "score": 8,
+            "rarity": 0.0299
+          },
+          {
+            "name": "8 Piercings",
+            "score": 9,
+            "rarity": 0.015
+          }
+        ]
+      },
+      {
+        "attribute": "attire",
+        "options": [
+          {
+            "name": "White Singlet",
+            "score": 1,
+            "rarity": 0.0566
+          },
+          {
+            "name": "",
+            "score": 2,
+            "rarity": 0.0552
+          },
+          {
+            "name": "Hi Vis Shirt Yellow",
+            "score": 3,
+            "rarity": 0.0552
+          },
+          {
+            "name": "Red Hoodie",
+            "score": 4,
+            "rarity": 0.0551
+          },
+          {
+            "name": "Blue Singlet",
+            "score": 5,
+            "rarity": 0.0549
+          },
+          {
+            "name": "Hi Vis Shirt Orange",
+            "score": 5,
+            "rarity": 0.0549
+          },
+          {
+            "name": "Polo Shirt",
+            "score": 6,
+            "rarity": 0.053
+          },
+          {
+            "name": "Black Singlet",
+            "score": 7,
+            "rarity": 0.0521
+          },
+          {
+            "name": "White Polo Shirt",
+            "score": 7,
+            "rarity": 0.0521
+          },
+          {
+            "name": "White T-Shirt",
+            "score": 8,
+            "rarity": 0.0503
+          },
+          {
+            "name": "Netball Shirt",
+            "score": 9,
+            "rarity": 0.0498
+          },
+          {
+            "name": "Black T-Shirt",
+            "score": 10,
+            "rarity": 0.0494
+          },
+          {
+            "name": "Black Hoodie",
+            "score": 11,
+            "rarity": 0.047
+          },
+          {
+            "name": "NRL Jersey",
+            "score": 12,
+            "rarity": 0.0449
+          },
+          {
+            "name": "AFL Jersey",
+            "score": 13,
+            "rarity": 0.0447
+          },
+          {
+            "name": "Trippy T-Shirt",
+            "score": 13,
+            "rarity": 0.0447
+          },
+          {
+            "name": "DrizaBone",
+            "score": 14,
+            "rarity": 0.03
+          },
+          {
+            "name": "Surf Rescue Shirt",
+            "score": 14,
+            "rarity": 0.03
+          },
+          {
+            "name": "Fire Brigade Jacket",
+            "score": 15,
+            "rarity": 0.0152
+          },
+          {
+            "name": "Mr Squiggle Shirt",
+            "score": 15,
+            "rarity": 0.0152
+          },
+          {
+            "name": "Humphrey vest",
+            "score": 15,
+            "rarity": 0.0152
+          },
+          {
+            "name": "Dundee Shirt",
+            "score": 15,
+            "rarity": 0.0152
+          },
+          {
+            "name": "Tux",
+            "score": 15,
+            "rarity": 0.0152
+          },
+          {
+            "name": "Angus Top",
+            "score": 16,
+            "rarity": 0.015
+          },
+          {
+            "name": "Pink Bikini",
+            "score": 17,
+            "rarity": 0.0149
+          },
+          {
+            "name": "Floaties",
+            "score": 17,
+            "rarity": 0.0149
+          }
+        ]
+      },
+      {
+        "attribute": "leftHandObject",
+        "options": [
+          {
+            "name": "Schooner",
+            "score": 1,
+            "rarity": 0.0675
+          },
+          {
+            "name": "Vegemite Toast",
+            "score": 2,
+            "rarity": 0.0665
+          },
+          {
+            "name": "Vegemite Jar",
+            "score": 3,
+            "rarity": 0.065
+          },
+          {
+            "name": "",
+            "score": 4,
+            "rarity": 0.0644
+          },
+          {
+            "name": "Bunnings Snag",
+            "score": 4,
+            "rarity": 0.0644
+          },
+          {
+            "name": "Bundy",
+            "score": 5,
+            "rarity": 0.0641
+          },
+          {
+            "name": "Lamington",
+            "score": 6,
+            "rarity": 0.0636
+          },
+          {
+            "name": "Fairy Bread",
+            "score": 7,
+            "rarity": 0.0635
+          },
+          {
+            "name": "Stubbie",
+            "score": 8,
+            "rarity": 0.0629
+          },
+          {
+            "name": "Meat Pie",
+            "score": 9,
+            "rarity": 0.0615
+          },
+          {
+            "name": "6 pack",
+            "score": 10,
+            "rarity": 0.0614
+          },
+          {
+            "name": "NRL Ball",
+            "score": 11,
+            "rarity": 0.0597
+          },
+          {
+            "name": "AFL Ball",
+            "score": 12,
+            "rarity": 0.0587
+          },
+          {
+            "name": "Cricket Bat",
+            "score": 13,
+            "rarity": 0.0449
+          },
+          {
+            "name": "Skateboard",
+            "score": 14,
+            "rarity": 0.044
+          },
+          {
+            "name": "Surfboard",
+            "score": 15,
+            "rarity": 0.029
+          },
+          {
+            "name": "Bong",
+            "score": 16,
+            "rarity": 0.015
+          },
+          {
+            "name": "Guitar",
+            "score": 17,
+            "rarity": 0.0149
+          },
+          {
+            "name": "Dropbear Sign",
+            "score": 17,
+            "rarity": 0.0149
+          },
+          {
+            "name": "Snowboard",
+            "score": 18,
+            "rarity": 0.0147
+          }
+        ]
+      },
+      {
+        "attribute": "watches",
+        "options": [
+          {
+            "name": "",
+            "score": 1,
+            "rarity": 0.5356
+          },
+          {
+            "name": "Black Watch",
+            "score": 2,
+            "rarity": 0.3741
+          },
+          {
+            "name": "Gold Watch",
+            "score": 3,
+            "rarity": 0.0752
+          },
+          {
+            "name": "Rocko Watch",
+            "score": 4,
+            "rarity": 0.0152
+          }
+        ]
+      }
+    ]
+  }
+]

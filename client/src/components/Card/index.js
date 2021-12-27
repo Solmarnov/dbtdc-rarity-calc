@@ -32,11 +32,12 @@ const Card = props => {
       <div className="card-frame">
         <div className="card-inner">
           <div className="card-title">
-            {name}
+            <h2>{name}</h2>
           </div>
           <img src={ipfsBaseUrl + img} className="card-image" alt="" />
           <div className="card-score">
-            {rarityScore}
+            <h2>Rarity Score {rarityScore}</h2>
+            
           </div>
           <div className="card-attributes-outer">
             <h2 className="card-attributes-title">Attributes</h2>

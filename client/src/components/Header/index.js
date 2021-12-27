@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.css'
+import logo from '../../assets/images/dbtdc-logo-512x512.png'
 
 const Header = () => {
 
@@ -7,7 +8,7 @@ const Header = () => {
     <header className="primary-header">
       <div>
         <a className="logo-wrap" href="https://sites.google.com/dayum.com.au/dropbears/home">
-          <img src="" className="logo" aria-label="Site home"/>
+          <img src={logo} className="logo" aria-label="Site home"/>
           <span className="logo-text">The Dropbears Tree Diving Club</span>
         </a>
       </div>

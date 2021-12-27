@@ -15,6 +15,9 @@ const Search = () => {
   const [formObject, setFormObject] = useState ({})
   const [searchResult, setSearchResult] = useState({})
   const [rarityScore, setRarityScore] = useState(0)
+  const [isDisabled, setIsDisabled] = useState(false)
+  const [formErrors, setFormErrors] = useState({})
+
   class Dropbear {
     constructor(
       fur = "",
@@ -44,12 +47,15 @@ const Search = () => {
 
   const handleInputChange = ({ target }) => {
     const { name, value } = target
+    setIsDisabled(false)
     setFormObject({ ...formObject, [name]: value })
   }
   
   const handleFormSubmit = event => {
     event.preventDefault();
-    event.target.setAttribute('disabled', true)
+    setIsDisabled(true)
+    setFormErrors({})
+    handleValidation()
     const { searchQuery } = formObject
     if (formObject.searchQuery) {
       getAtomicAssets(searchQuery)
@@ -89,6 +95,20 @@ const Search = () => {
         setFormObject({})
       })
       .catch(err => console.log(`Error occurred during Handle Form Submit.\n${err}`))
+    }
+  }
+
+  const handleValidation = () => {
+    const { searchQuery } = formObject
+    
+    if (
+      isNaN(searchQuery) ||
+      searchQuery < 1 || 
+      searchQuery > 6666 
+    ) {
+      setFormErrors({
+        searchQuery: "Value must be a number between 1 and 6666."
+      })
     }
   }
 
@@ -134,26 +154,35 @@ const Search = () => {
         <Form id="dropbear-search-form">
           <FormGroup>
             <Input 
-              type="text" 
+              type="number" 
+              min="1"
+              max="6666"
               name="searchQuery" 
-              id="dropbear-search-input" 
-              placeholder="Search Dropbear (e.g. 3701)" 
-              onChange={handleInputChange} 
+              id="dropbear-search-input"
+              onChange={handleInputChange}
             />
           </FormGroup>
           <FormBtn
             type="submit"
             id="dropbear-search-button"
-            disabled={!(formObject.searchQuery)}
+            disabled={isDisabled}
             onClick={handleFormSubmit}
           >
             Search
           </FormBtn>
         </Form>
+        <div className="validation-error">
+          {formErrors.searchQuery}
+        </div>
       </Container>
       <Container id="dropbear-result-container">
         {isObjectEmpty(searchResult) ? (
-          <h2>Search Dropbear</h2>
+          <div className="search-default">
+            <h2>Search Dropbear</h2>
+            <p>
+              Enter a Dropbear's number between 1 and 6666.
+            </p>
+          </div>
         ) : (
           <Card 
             searchResult={searchResult}

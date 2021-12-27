@@ -11,15 +11,16 @@ h2 {
   justify-content: center;
   margin: auto;
   width: 325px;
-  height: 600px;
+  height: 642px;
   border-radius: 15px;
   background: black;
+  padding: 10px;
 }
 
 .card-frame {
-  width: 92%;
+  width: 100%;
   height: 80%;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   border-radius: 6px;
   background: #ffc202;
   align-items: center;
@@ -28,20 +29,7 @@ h2 {
 .card-inner {
   display: flex;
   flex-direction: column;
-  margin: 6px;
-}
-
-.card-title, .card-score {
-  align-self: center;
-  width: 104%;
-  border-top: 2px solid #7e7e7e;
-  border-right: 2px solid #7e7e7e;
-  border-bottom: 3px solid #000;
-  border-left: 3px solid #000;
-  border-radius: 50px;
-  padding: 4px 0;
-  background: #fff0bd;
-  text-align: center;
+  margin: 0 6px 6px;
 }
 
 .card-image {
@@ -49,9 +37,10 @@ h2 {
   border-right: 2px solid #7e7e7e;
   border-bottom: 3px solid #000;
   border-left: 3px solid #000;
+  border-radius: 6px;
 }
 
-.card-score {
+.card-title, .card-score {
   padding: 2px 0;
 }
 
@@ -63,8 +52,9 @@ h2 {
   border-right: 2px solid #7e7e7e;
   border-bottom: 3px solid #000;
   border-left: 3px solid #000;
+  border-radius: 8px;
   padding-bottom: 5px;
-  background: #fff5d4;
+  background: #e8e8e8;
 }
 
 .card-attribute {

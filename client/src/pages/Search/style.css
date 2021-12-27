@@ -8,6 +8,17 @@
   flex-direction: column;
 }
 
+.validation-error {
+  padding: 5px 0;
+  font-size: 0.9em;
+  color: red;
+  text-align: center;
+}
+
+#dropbear-result-container {
+  margin: 20px 0;
+}
+
 h1 {
   margin: 20px 0;
   text-align: center;
@@ -16,7 +27,6 @@ h1 {
 #dropbear-search-form {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
 }
 
 #dropbear-search-input {
@@ -33,5 +43,9 @@ h1 {
   padding: 4px 16px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
+}
+
+.search-default {
+  text-align: center;
 }
 

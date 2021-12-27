@@ -34,7 +34,7 @@ const Card = props => {
           <div className="card-title">
             <h2>{name}</h2>
           </div>
-          <img src={ipfsBaseUrl + img} className="card-image" alt="" />
+          <img referrerPolicy="no-referrer" src={ipfsBaseUrl + img} className="card-image" alt="" />
           <div className="card-score">
             <h2>Rarity Score {rarityScore}</h2>
             

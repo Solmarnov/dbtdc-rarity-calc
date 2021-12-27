@@ -1,4 +1,4 @@
-import React, {useEffect } from 'react'
+import React from 'react'
 import './style.css'
 
 const Card = props => {
@@ -6,7 +6,7 @@ const Card = props => {
   const ipfsBaseUrl = 'https://ipfs.atomichub.io/ipfs/'
   // Destructuring props
   const { 
-    searchResult: { owner },
+    // searchResult: { owner }, **Re-visit when owner is to be included**
     searchResult: { data: 
       {
         Background: background = defaultValue,
@@ -14,22 +14,18 @@ const Card = props => {
         Eyes: eyes = defaultValue,
         Eyewear: eyewear = defaultValue,
         Mouth: mouth = defaultValue,
-        ['Mouth Object']: mouthObject = defaultValue,
+        'Mouth Object': mouthObject = defaultValue,
         Hat: hat = defaultValue,
         Piercings: piercings = defaultValue,
         Attire: attire = defaultValue,
-        ['Left Hand Object']: leftHandObject = defaultValue,
+        'Left Hand Object': leftHandObject = defaultValue,
         Watches: watches = defaultValue,
         img
       },
       name
-    }
+    },
+    rarityScore
   } = props
-
-  console.log(`
-Card props:
-${JSON.stringify(props, null, 4)}
-  `)
 
   return (
     <div className="card-outer">
@@ -38,9 +34,9 @@ ${JSON.stringify(props, null, 4)}
           <div className="card-title">
             {name}
           </div>
-          <img src={ipfsBaseUrl + img} className="card-image" />
+          <img src={ipfsBaseUrl + img} className="card-image" alt="" />
           <div className="card-score">
-            100
+            {rarityScore}
           </div>
           <div className="card-attributes-outer">
             <h2 className="card-attributes-title">Attributes</h2>
